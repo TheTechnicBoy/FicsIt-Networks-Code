@@ -6,6 +6,7 @@ local max = 10
 
 pot.max = max
 pot.min = min
+pot.value = min
 
 while true do
 dis:setText("ITEM NAMEN")
