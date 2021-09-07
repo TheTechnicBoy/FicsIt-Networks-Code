@@ -53,7 +53,7 @@ end
 
 
 print("YOU HAVE TO CLOSE THE WINDOW with-in 5sec till the high beeps!")
-for i=0, 5, 1 do
+for i=1, 5, 1 do
 	event.pull(1)
 	print(i .. "...")
 	computer.beep(0.7)
