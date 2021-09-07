@@ -38,6 +38,8 @@ end
 
 
 download("var.lua","TheTechnicBoy")
+download("download.lua","TheTechnicBoy")
+
 
 
 internet = computer.getPCIDevices(findClass("FINInternetCard"))[1]
