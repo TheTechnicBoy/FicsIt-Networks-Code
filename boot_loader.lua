@@ -12,3 +12,16 @@ if drive:len() < 1 then
 	return
 end
 filesystem.mount("/dev/" .. drive, "/")
+
+
+
+while true do
+event.pull(0.1)
+  func_var = filesystem.loadFile("var.lua")
+  func_var()
+  
+  func_file = filesystem.loadFile("download.lua")
+  func_file()
+
+
+  end
