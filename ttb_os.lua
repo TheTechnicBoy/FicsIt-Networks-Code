@@ -52,8 +52,8 @@ if code ~= 200 or not data then
 end
 
 
-print("YOU HAVE TO CLOSE THE WINDOW with-in 10sec till the high beeps!")
-for i=0, 10, 1 do
+print("YOU HAVE TO CLOSE THE WINDOW with-in 5sec till the high beeps!")
+for i=0, 5, 1 do
 	event.pull(1)
 	print(i .. "...")
 	computer.beep(0.7)
@@ -61,13 +61,4 @@ end
 
 
 computer.setEEPROM(data)
-
-
-
-
-
-
-
-
-
 
