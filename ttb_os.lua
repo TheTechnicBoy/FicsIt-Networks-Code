@@ -35,11 +35,18 @@ function download(file, author)
   requestFile("https://raw.githubusercontent.com/".. author .. "/FicsIt-Networks-Code/main/" .. file, "/" .. file)
 end
 
-
+function folder(Name)
+  local path = filesystem.path("/",Name)
+  filesystem.createDir(path)
+end
 
 download("var.lua","TheTechnicBoy")
 download("download.lua","TheTechnicBoy")
 download("RSS.lua","TheTechnicBoy")
+download("folder.lua","TheTechnicBoy")
+
+
+folder("Var")
 
 
 
