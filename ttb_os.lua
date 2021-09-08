@@ -40,10 +40,10 @@ function folder(Name)
   filesystem.createDir(path)
 end
 
-download("var.lua","TheTechnicBoy")
-download("download.lua","TheTechnicBoy")
-download("RSS.lua","TheTechnicBoy")
-download("folder.lua","TheTechnicBoy")
+download("var.lua","TheTechnicBoy","/")
+download("download.lua","TheTechnicBoy","/")
+download("RSS.lua","TheTechnicBoy","/")
+download("folder.lua","TheTechnicBoy","/")
 
 
 folder("Var")
