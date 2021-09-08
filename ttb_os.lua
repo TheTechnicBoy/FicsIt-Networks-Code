@@ -46,7 +46,7 @@ download("RSS.lua","TheTechnicBoy","/")
 download("folder.lua","TheTechnicBoy","/")
 
 
-folder("Var")
+folder("VAR")
 
 
 
