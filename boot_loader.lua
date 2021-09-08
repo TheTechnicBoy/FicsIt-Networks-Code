@@ -23,3 +23,6 @@ filesystem.mount("/dev/" .. drive, "/")
 
   func_RSS = filesystem.loadFile("RSS.lua")
   func_RSS()
+
+  func_Folder = filesystem.loadFile("foldeer.lua")
+  func_Folder()
