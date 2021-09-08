@@ -20,3 +20,6 @@ filesystem.mount("/dev/" .. drive, "/")
 
   func_file = filesystem.loadFile("download.lua")
   func_file()
+
+  func_RSS = filesystem.loadFile("RSS.lua")
+  func_RSS()
