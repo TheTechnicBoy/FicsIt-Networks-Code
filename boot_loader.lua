@@ -21,8 +21,11 @@ filesystem.mount("/dev/" .. drive, "/")
   func_file = filesystem.loadFile("download.lua")
   func_file()
 
-  func_RSS = filesystem.loadFile("RSS.lua")
-  func_RSS()
+  func_rss = filesystem.loadFile("RSS.lua")
+  func_rss()
 
-  func_Folder = filesystem.loadFile("folder.lua")
-  func_Folder()
+  func_folder = filesystem.loadFile("folder.lua")
+  func_folder()
+
+  func_color = filesystem.loadFile("color.lua")
+  func_color()
