@@ -44,6 +44,7 @@ download("var.lua","TheTechnicBoy","/")
 download("download.lua","TheTechnicBoy","/")
 download("RSS.lua","TheTechnicBoy","/")
 download("folder.lua","TheTechnicBoy","/")
+download("color.lua","TheTechnicBoy","/")
 
 
 folder("VAR")
