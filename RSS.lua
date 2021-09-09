@@ -1,4 +1,4 @@
 function RSS(ID, url)
- RSS = component.proxy(ID)
- RSS:setImageFromUrl(url)
+ local device = component.proxy(ID)
+ device:setImageFromUrl(url)
 end
