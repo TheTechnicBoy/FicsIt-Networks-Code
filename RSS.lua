@@ -1,4 +1,4 @@
-function RSS(url,ID)
+function RSS(ID, url)
  RSS = component.proxy(ID)
  RSS:setImageFromUrl(url)
 end
