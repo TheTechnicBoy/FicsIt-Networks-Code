@@ -5,6 +5,14 @@ for i=1, 5, 1 do
 	print(i .. "...")
 	computer.beep(0.7)
 end
-data = "filesystem.removeFileSystem(".."/dev"..")"
+internet = computer.getPCIDevices(findClass("FINInternetCard"))[1]
+
+code, data = internet:request("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/del.lua", "GET", ""):await()
+if code ~= 200 or not data then
+	print("ERROR! Failed to request EEPROM BIOS from")
+	computer.beep(0.2)
+	return
+end
+
 computer.setEEPROM(data)
 end
