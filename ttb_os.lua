@@ -16,7 +16,8 @@ filesystem.mount("/dev/" .. drive, "/")
 
 
 function requestFile(url, name, path)
-  filesystem.createDir(path)
+  filesystem.createDir(Name)
+  print("Create Folder named [   " .. Name .. "   ]")
   print("Requests file '" .. name .. "' from '" .. url .. "'")
   internet = computer.getPCIDevices(findClass("FINInternetCard"))[1]
   print("Write file '" .. name .. "'")
@@ -37,8 +38,8 @@ function download(file, path)
 end
 
 function folder(Name)
-  local path = filesystem.path("/",Name)
-  filesystem.createDir(path)
+filesystem.createDir(Name)
+print("Create Folder named [   " .. Name .. "   ]")
 end
 
 download("var.lua","/Functions/")
@@ -50,7 +51,7 @@ download("load_function.lua","/")
 
 
 folder("VAR")
-folder("Functions")
+
 
 
 
