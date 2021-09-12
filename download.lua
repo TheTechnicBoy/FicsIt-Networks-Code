@@ -15,6 +15,6 @@ function requestFile(url, name, path)
 end
 
 
-function download(file, author, path)
-  requestFile("https://raw.githubusercontent.com/".. author .. "/FicsIt-Networks-Code/main/" .. file, "/" .. file, path)
+function download(file)
+  requestFile("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/" .. file, "/" .. file)
 end
