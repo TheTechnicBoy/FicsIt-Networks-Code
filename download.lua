@@ -1,5 +1,6 @@
 function requestFile(url, name, path)
   filesystem.createDir(path)
+  print("Create Folder named [   " .. path .. "   ]")
   print("Requests file '" .. name .. "' from '" .. url .. "'")
   internet = computer.getPCIDevices(findClass("FINInternetCard"))[1]
   print("Write file '" .. name .. "'")
