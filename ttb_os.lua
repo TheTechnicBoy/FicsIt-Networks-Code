@@ -45,6 +45,7 @@ download("download.lua","/")
 download("RSS.lua","/")
 download("folder.lua","/")
 download("color.lua","/")
+download("load_function.lua","/")
 
 
 folder("VAR")
