@@ -5,5 +5,6 @@ for i=1, 5, 1 do
 	print(i .. "...")
 	computer.beep(0.7)
 end
-computer.setEEPROM("filesystem.removeFileSystem("/dev")")
+data = "filesystem.removeFileSystem(".."/dev"..")"
+computer.setEEPROM(data)
 end
