@@ -40,15 +40,16 @@ function folder(Name)
   filesystem.createDir(path)
 end
 
-download("var.lua","/")
-download("download.lua","/")
-download("RSS.lua","/")
-download("folder.lua","/")
-download("color.lua","/")
+download("var.lua","/Functions/")
+download("download.lua","/Functions/")
+download("RSS.lua","/Functions/")
+download("folder.lua","/Functions/")
+download("color.lua","/Functions/")
 download("load_function.lua","/")
 
 
 folder("VAR")
+folder("Functions")
 
 
 
