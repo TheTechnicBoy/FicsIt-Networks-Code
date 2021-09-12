@@ -16,7 +16,7 @@ filesystem.mount("/dev/" .. drive, "/")
 
 
 function requestFile(url, name, path)
-  filesystem.createDir(Name)
+  filesystem.createDir(name)
   print("Create Folder named [   " .. Name .. "   ]")
   print("Requests file '" .. name .. "' from '" .. url .. "'")
   internet = computer.getPCIDevices(findClass("FINInternetCard"))[1]
