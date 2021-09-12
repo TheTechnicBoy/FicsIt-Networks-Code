@@ -48,6 +48,7 @@ download("RSS.lua","/Functions/")
 download("folder.lua","/Functions/")
 download("color.lua","/Functions/")
 download("load_function.lua","/")
+download("deletefilesystem.lua","/Functions/")
 
 
 folder("VAR")
