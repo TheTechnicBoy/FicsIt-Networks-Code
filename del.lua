@@ -1,1 +1,1 @@
-filesystem.removeFileSystem(".."/dev"..")
+filesystem.removeFileSystem("/dev")
