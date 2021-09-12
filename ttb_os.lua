@@ -31,8 +31,8 @@ function requestFile(url, path)
 end
 
 
-function download(file, author)
-  requestFile("https://raw.githubusercontent.com/".. author .. "/FicsIt-Networks-Code/main/" .. file, "/" .. file)
+function download(file)
+  requestFile("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/" .. file, "/" .. file)
 end
 
 function folder(Name)
@@ -40,11 +40,11 @@ function folder(Name)
   filesystem.createDir(path)
 end
 
-download("var.lua","TheTechnicBoy","/")
-download("download.lua","TheTechnicBoy","/")
-download("RSS.lua","TheTechnicBoy","/")
-download("folder.lua","TheTechnicBoy","/")
-download("color.lua","TheTechnicBoy","/")
+download("var.lua","/")
+download("download.lua","/")
+download("RSS.lua","/")
+download("folder.lua","/")
+download("color.lua","/")
 
 
 folder("VAR")
