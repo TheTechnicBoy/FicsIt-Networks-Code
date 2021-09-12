@@ -1,14 +1,14 @@
-  func_var = filesystem.loadFile("var.lua")
+  func_var = filesystem.loadFile("/Functions/var.lua")
   func_var()
 
-  func_file = filesystem.loadFile("download.lua")
+  func_file = filesystem.loadFile("/Functions/download.lua")
   func_file()
 
-  func_rss = filesystem.loadFile("RSS.lua")
+  func_rss = filesystem.loadFile("/Functions/RSS.lua")
   func_rss()
 
-  func_folder = filesystem.loadFile("folder.lua")
+  func_folder = filesystem.loadFile("/Functions/folder.lua")
   func_folder()
 
-  func_color = filesystem.loadFile("color.lua")
+  func_color = filesystem.loadFile("/Functions/color.lua")
   func_color()
