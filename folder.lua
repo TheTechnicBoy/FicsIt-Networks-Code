@@ -1,4 +1,4 @@
 function folder(Name)
-  local path = filesystem.path("/",Name)
-  filesystem.createDir(path)
+filesystem.createDir(Name)
+print("Create Folder named [   " .. Name .. "   ]")
 end
