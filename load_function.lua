@@ -12,3 +12,6 @@
 
   func_color = filesystem.loadFile("/Functions/color.lua")
   func_color()
+
+  func_deletefilesystem = filesystem.deletefilesystem("/Functions/deletefilesystem.lua")
+  func_deletefilesystem
