@@ -14,4 +14,4 @@
   func_color()
 
   func_deletefilesystem = filesystem.deletefilesystem("/Functions/deletefilesystem.lua")
-  func_deletefilesystem
+  func_deletefilesystem()
