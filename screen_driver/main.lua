@@ -66,7 +66,8 @@ while true do
         object  = y - 2
         id      = y - 1
 
-        id = component.proxy(Controller[id])
+        id = Controller[id]
+        id = component.proxy(id)
         print(id)
         if id.standby  == true then
             aktive = false
