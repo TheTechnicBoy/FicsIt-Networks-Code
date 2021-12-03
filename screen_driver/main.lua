@@ -29,6 +29,7 @@ while true do
     for i,v in ipairs(Controller) do
         if i%2 == 0 then
             v = component.proxy(v)
+            print(v.standby)
             if v.standby  == true then
                 gpu:setText(59,i+1,"S")
             elseif v.standby  == false then
