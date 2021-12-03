@@ -67,19 +67,21 @@ while true do
         id      = y - 1
 
         id = Controller[id]
-        id = component.proxy(id)
-        print(id)
-        print(id.standby)
-        if id.standby  == true then
-            active = false
-        elseif id.standby  == false then
-            active = true
-        end
-        print(active)
-        if active == true then
-            id.standby = true
-        elseif active == false then
-            id.standby = false
+        if id then
+            id = component.proxy(id)
+            print(id)
+            print(id.standby)
+            if id.standby  == true then
+                active = false
+            elseif id.standby  == false then
+                active = true
+            end
+            print(active)
+            if active == true then
+                id.standby = true
+            elseif active == false then
+                id.standby = false
+            end
         end
 
     end
