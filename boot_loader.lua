@@ -19,3 +19,4 @@ filesystem.mount("/dev/" .. drive, "/")
   func_all()
 
 
+--ola
