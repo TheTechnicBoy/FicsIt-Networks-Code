@@ -23,12 +23,12 @@ while true do
     Controller()
 
     for i,v in ipairs(Controller) do
-         if i%2 == 0 then
-         else
-        print(i)
-         print(v)
-         gpu:setTect(50,i,v)
-         end
+        if i%2 == 0 then
+        else
+            print(i)
+            print(v)
+            gpu:setText(50,i,v)
+        end
     end
 
 
