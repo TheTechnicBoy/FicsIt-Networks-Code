@@ -12,15 +12,16 @@ end
 main = load(data)
 
 
-function Controller()
+
+function objects()
     
     Controller = {}
 
     Controller[1] = "Name"
     Controller[2] = "ID"
-
-
-
+    Controller[3] = "Name"
+    Controller[4] = "ID"
+    --etc.
 
 
 end
