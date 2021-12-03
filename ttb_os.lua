@@ -15,14 +15,16 @@ filesystem.mount("/dev/" .. drive, "/")
 
 
 
-function requestFile(url, path)
-  print("Requests file '" .. path .. "' from '" .. url .. "'")
+function requestFile(url, name, path)
+  filesystem.createDir(path)
+  print("Create Folder named [   " .. path .. "   ]")
+  print("Requests file '" .. name .. "' from '" .. url .. "'")
   internet = computer.getPCIDevices(findClass("FINInternetCard"))[1]
-  print("Write file '" .. path .. "'")
-  local file = filesystem.open(path, "w")
+  print("Write file '" .. name .. "'")
+  local file = filesystem.open(path .. name, "w")
   local code, data = internet:request(url, "GET", ""):await()
   if code ~= 200 or not data then
-    print("ERROR! Unable to request file '" .. path .. "' from '" .. url .. "'")
+    print("ERROR! Unable to request file '" .. name .. "' from '" .. url .. "'")
     return false
   end
 
@@ -31,23 +33,26 @@ function requestFile(url, path)
 end
 
 
-function download(file, author)
-  requestFile("https://raw.githubusercontent.com/".. author .. "/FicsIt-Networks-Code/main/" .. file, "/" .. file)
+function download(file, path)
+  requestFile("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/" .. file, "/" .. file, path)
 end
 
 function folder(Name)
-  local path = filesystem.path("/",Name)
-  filesystem.createDir(path)
+filesystem.createDir(Name)
+print("Create Folder named [   " .. Name .. "   ]")
 end
 
-download("var.lua","TheTechnicBoy","/")
-download("download.lua","TheTechnicBoy","/")
-download("RSS.lua","TheTechnicBoy","/")
-download("folder.lua","TheTechnicBoy","/")
-download("color.lua","TheTechnicBoy","/")
+download("var.lua","/Functions/")
+download("download.lua","/Functions/")
+download("RSS.lua","/Functions/")
+download("folder.lua","/Functions/")
+download("color.lua","/Functions/")
+download("load_function.lua","/")
+download("deletefilesystem.lua","/Functions/")
 
 
 folder("VAR")
+
 
 
 

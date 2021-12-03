@@ -1,5 +1,6 @@
 function requestFile(url, name, path)
-  folder(path)
+  filesystem.createDir(path)
+  print("Create Folder named [   " .. path .. "   ]")
   print("Requests file '" .. name .. "' from '" .. url .. "'")
   internet = computer.getPCIDevices(findClass("FINInternetCard"))[1]
   print("Write file '" .. name .. "'")
@@ -15,6 +16,6 @@ function requestFile(url, name, path)
 end
 
 
-function download(file, author, path)
-  requestFile("https://raw.githubusercontent.com/".. author .. "/FicsIt-Networks-Code/main/" .. file, "/" .. file, path)
+function download(file, path)
+  requestFile("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/" .. file, "/" .. file, path)
 end
