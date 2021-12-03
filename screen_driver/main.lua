@@ -67,7 +67,7 @@ while true do
         id      = y - 1
 
         id = component.proxy(Controller[id])
-        --print(id)
+        print(id)
         if id.standby  == true then
             aktive = false
         elseif id.standby  == false then
