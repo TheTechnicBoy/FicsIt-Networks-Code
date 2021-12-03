@@ -49,7 +49,14 @@ while true do
     --y = 2 parm
 
     if e == "OnMouseDown" then
-        print(x,y)
+        --print(x,y)
+        if x == 50 then
+            object  = y - 2
+            id      = y - 1
+
+            print(objects[object])
+            print(objects[id])
+        end
     end
 
     gpu:flush()
