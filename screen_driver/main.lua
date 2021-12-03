@@ -20,7 +20,7 @@ gpu:flush()
 
 while true do
 
-    Controller()
+    objects()
 
     for i,v in ipairs(Controller) do
         if i%2 == 0 then
