@@ -39,8 +39,6 @@ while true do
 
             gpu:setText(40,i+2,v)
 
-            
-            
         end
     end
 
@@ -69,14 +67,12 @@ while true do
         id = Controller[id]
         if id then
             id = component.proxy(id)
-            print(id)
-            print(id.standby)
             if id.standby  == true then
                 active = false
             elseif id.standby  == false then
                 active = true
             end
-            print(active)
+
             if active == true then
                 id.standby = true
             elseif active == false then
