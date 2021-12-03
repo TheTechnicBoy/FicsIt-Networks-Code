@@ -30,6 +30,7 @@ while true do
             gpu:setText(50,i,v)
         end
     end
+    gpu:flush()
 
 
     e, s, x, y = event.pull()
