@@ -20,19 +20,24 @@ gpu:flush()
 
 while true do
 
+
+    gpu:fill(0, 0, screenW, screenH, " ") 
+    gpu:setTExt(40, 0, "Objects")
+    gpu:fill(40, 1, 10, 1, "-" )
     objects()
 
     for i,v in ipairs(Controller) do
         if i%2 == 0 then
         else
-            print(i)
-            print(v)
-            gpu:setText(50,i,v)
-            gpu:flush()
+
+            gpu:setText(50,i+2,v)
+            
         end
     end
 
-    print("hi")
+    gpu:flush()
+
+
    
 
 
