@@ -31,7 +31,7 @@ while true do
             v = component.proxy(v)
             if v.standby  == true then
                 gpu:setText(59,i+1,"S")
-            elseif v.standby  == true then
+            elseif v.standby  == false then
                 gpu:setText(59,i+1,"A")
             end
         else
