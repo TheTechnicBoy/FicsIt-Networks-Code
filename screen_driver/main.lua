@@ -29,7 +29,7 @@ while true do
     for i,v in ipairs(Controller) do
         if i%2 == 0 then
             v = component.proxy(v)
-            print(v.standby)
+            --print(v.standby)
             if v.standby  == true then
                 gpu:setText(59,i+1,"S")
             elseif v.standby  == false then
@@ -67,8 +67,9 @@ while true do
         id      = y - 1
 
         id = component.proxy(Controller[id])
+        --print(id)
         if id.standby  == true then
-            aktive = true
+            aktive = false
         elseif id.standby  == false then
             aktive = false
         end
