@@ -28,12 +28,23 @@ while true do
 
     for i,v in ipairs(Controller) do
         if i%2 == 0 then
+            v = component.proxy(v)
+            if v.standby  == true then
+                gpu:setText(59,i+1,"S")
+            elseif v.standby  == true then
+                gpu:setText(59,i+1,"A")
+            end
         else
 
-            gpu:setText(50,i+2,v)
+            gpu:setText(40,i+2,v)
+
+            
             
         end
     end
+
+    
+
 
     gpu:flush()
 
@@ -50,13 +61,13 @@ while true do
 
     if e == "OnMouseDown" then
         --print(x,y)
-        if x == 50 then
-            object  = y - 2
-            id      = y - 1
+   
+        object  = y - 2
+        id      = y - 1
 
-            print(Controller[object])
-            print(Controller[id])
-        end
+        print(Controller[object])
+        print(Controller[id])
+
     end
 
     gpu:flush()
