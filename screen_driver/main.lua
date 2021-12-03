@@ -28,9 +28,12 @@ while true do
             print(i)
             print(v)
             gpu:setText(50,i,v)
+            gpu:flush()
         end
     end
-    gpu:flush()
+
+    print("hi")
+   
 
 
     e, s, x, y = event.pull()
