@@ -18,5 +18,3 @@ filesystem.mount("/dev/" .. drive, "/")
   func_all = filesystem.loadFile("load_function.lua")
   func_all()
 
-
---ola

@@ -34,7 +34,7 @@ end
 
 
 function download(file, path)
-  requestFile("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/" .. file, "/" .. file, path)
+  requestFile("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/ttb_os/" .. file, "/" .. file, path)
 end
 
 function folder(Name)
@@ -58,7 +58,7 @@ folder("VAR")
 
 internet = computer.getPCIDevices(findClass("FINInternetCard"))[1]
 
-code, data = internet:request("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/boot_loader.lua", "GET", ""):await()
+code, data = internet:request("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/ttb_os/boot_loader.lua", "GET", ""):await()
 if code ~= 200 or not data then
 	print("ERROR! Failed to request EEPROM BIOS from")
 	computer.beep(0.2)

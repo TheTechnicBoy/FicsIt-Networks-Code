@@ -17,5 +17,5 @@ end
 
 
 function download(file, path)
-  requestFile("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/" .. file, "/" .. file, path)
+  requestFile("https://raw.githubusercontent.com/TheTechnicBoy/FicsIt-Networks-Code/main/ttb_os/" .. file, "/" .. file, path)
 end
