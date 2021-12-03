@@ -54,8 +54,8 @@ while true do
             object  = y - 2
             id      = y - 1
 
-            print(objects[object])
-            print(objects[id])
+            print(Controller[object])
+            print(Controller[id])
         end
     end
 
