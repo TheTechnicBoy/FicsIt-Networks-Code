@@ -5,6 +5,6 @@ for i=1, 5, 1 do
 	print(i .. "...")
 	computer.beep(0.7)
 end
-filesystem.removeFileSystem(1)
+filesystem.removeFileSystem(drive)
 computer.setEEPROM("")
 end
