@@ -22,8 +22,8 @@ while true do
 
 
     gpu:fill(0, 0, screenW, screenH, " ") 
-    gpu:setTExt(40, 0, "Objects")
-    gpu:fill(40, 1, 10, 1, "-" )
+    gpu:setText(50, 0, "Objects")
+    gpu:fill(40, 1, 20, 1, "-" )
     objects()
 
     for i,v in ipairs(Controller) do
@@ -49,11 +49,14 @@ while true do
     --y = 2 parm
 
     if e == "OnMouseDown" then
-        --print("Down")
+        MouseDown = true
     elseif e == "OnMouseUp" then
-        --print("UP")
-    elseif e == "OnMouseMove" then
-        --print(x,y)
+        MouseDown = false
+    end
+    
+    if e == "OnMouseMove" and MouseDown == true then
+        print(x,y)
+        MouseDown = false
     end
 
     gpu:flush()
