@@ -64,21 +64,26 @@ while true do
         object  = y - 2
         id      = y - 1
 
-        id = Controller[id]
-        if id then
-            id = component.proxy(id)
-            if id.standby  == true then
-                active = false
-            elseif id.standby  == false then
-                active = true
-            end
+        if y%2 == 0 then
 
-            if active == true then
-                id.standby = true
-            elseif active == false then
-                id.standby = false
+        else
+            id = Controller[id]
+            if id then
+                id = component.proxy(id)
+                if id.standby  == true then
+                    active = false
+                elseif id.standby  == false then
+                    active = true
+                end
+
+                if active == true then
+                    id.standby = true
+                elseif active == false then
+                    id.standby = false
+                end
             end
         end
+        
 
     end
 
