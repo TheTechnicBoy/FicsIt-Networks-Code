@@ -9,14 +9,7 @@ if code ~= 200 or not data then
     return
 end
 
+max = 5             -- you can just put a different digit hear, higher =>  higher Resolution, lower => lower Resolution
 
 
-
-max = 5
-
-
-
-
-
-
-main = load(data)
+main = load(data)    
