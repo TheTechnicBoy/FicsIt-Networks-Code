@@ -8,8 +8,8 @@ if code ~= 200 or not data then
     computer.beep(1)
     return
 end
+main = load(data)  
 
-max = 5             -- you can just put a different digit hear, higher =>  higher Resolution, lower => lower Resolution
+max = 5           -- you can just put a different digit hear, higher =>  higher Resolution, lower => lower Resolution
 
-
-main = load(data)    
+main()
