@@ -1,4 +1,7 @@
-max = 5
+if not max then
+    max = 5
+end
+
 x = max
 y= 1
 while x >= 1 do
